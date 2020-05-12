@@ -15,6 +15,13 @@ class Book
 		{
 			cout << "Creating a Book Object" << endl;
 		}
+
+		Book (string aTitle, string aAuthor, int aPages)
+		{
+			title = aTitle;
+			author = aAuthor;
+			pages = aPages;
+		}
 };
 
 int main ()
@@ -26,6 +33,10 @@ int main ()
 	book1.pages = 500;
 
 	cout << book1.title << " : " << book1.author << " : " << book1.pages << endl;
+
+	Book book2("Lord of the Rings", "Tolkein", 700);
+
+	cout << book2.title << " : " << book2.author << " : " << book2.pages << endl;
 
 	return 0;
 }
